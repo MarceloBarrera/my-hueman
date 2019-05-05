@@ -1,0 +1,20 @@
+# ignore package-lock.json since it is causing more problems than it solves (conflicts in PR's especially)
+package-lock.json
+
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+source/
+cache/
+
+# IDE specific files
+###################################################
+jsconfig.json
+.tern-project
+.vscode
+.idea
+
