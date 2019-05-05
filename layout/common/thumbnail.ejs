@@ -1,5 +1,7 @@
 <a href="<%- url_for(post.link ? post.link : post.path) %>" class="thumbnail">
     <% var thumbnailUrl = thumbnail(post) %>
+     <!--const latestPost = site.posts.sort('date', -1).first();-->
+     <!--&& latestPost.title === post.title-->
     <% if (thumbnailUrl) { %>
         <span style="background-image:url(<%- thumbnailUrl %>)" alt="<%= post.title %>" class="thumbnail-image"></span>
     <% } else { %>

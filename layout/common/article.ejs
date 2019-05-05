@@ -18,6 +18,10 @@
         </div>
         <footer class="article-footer">
             <%- partial('share/index', { post: post }) %>
+            <% if (post.published !== undefined){ /*is a post not a page*/ %>
+                <%- partial('widget/latest_posts') %>
+                <%- partial('post/nav') %>
+            <% } %>
         </footer>
     </div>
     <%- partial('post/ld_json', { post: post }) %>
