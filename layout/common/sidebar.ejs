@@ -3,20 +3,13 @@
     <div class="sidebar-top">
         <p><%= __('sidebar.follow') %>:</p>
         <ul class="social-links">
-            <% for (var i in theme.customize.social_links) { %>
-                <% if (theme.customize.social_links[i]) { %>
-                <li>
-                    <a class="social-tooltip" title="<%= i %>" href="<%- url_for(theme.customize.social_links[i]) %>" target="_blank" rel="noopener">
-                        <i class="icon fa fa-<%= i %>"></i>
-                    </a>
-                </li>
-                <% } %>
-            <% } %>
+            <li><a href="mailto:monikambarrera@gmail.com" title="e-mail" ><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/whatbooktoreadnext_/" title="Instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://no.pinterest.com/whatbooktoreadnext/" title="Pinterest" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+            <li><a href="https://whatbooktoreadnext.com/atom.xml" title="feed" target="_blank"><i class="fa fa-feed" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.facebook.com/sharer.php?u=https://whatbooktoreadnext.com/" title="Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
         </ul>
     </div>
-    <% if (is_post()) { %>
-        <%- partial('post/nav', {post: page}) %>
-    <% } %>
     <div class="widgets-container">
         <% if (theme.widgets) { %>
             <% theme.widgets.forEach(function(widget) { %>
