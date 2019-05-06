@@ -11,10 +11,16 @@
         </ul>
     </div>
     <div class="widgets-container">
-        <% if (theme.widgets) { %>
+        <% if (theme.widgets && !is_post()) { %>
             <% theme.widgets.forEach(function(widget) { %>
                 <%- partial('widget/' + widget, {post: page}) %>
             <% }) %>
         <% } %>
+        <% if (is_post()) { %>
+            <%- partial('widget/recent_posts', {post: page}) %>
+        <% } %>
+
+        <%- partial('widget/goodreads_box') %>
     </div>
+
 </aside>
