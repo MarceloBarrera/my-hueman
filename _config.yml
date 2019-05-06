@@ -3,6 +3,7 @@ menu:
     Home: /
     # Delete this row if you don't want categories in your header nav bar
     # Categories:
+    Archive: /archives/index.html
     About: /about/index.html
 
 # Customize

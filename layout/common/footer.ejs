@@ -6,11 +6,11 @@
               <%- partial('plugin/scripts', { isFooter: true }) %>
             </div>
         </div>
-        <div>
+        <div style="margin-bottom: 30px">
             <span>Follow me on Instagram</span>
             <a href="https://www.instagram.com/whatbooktoreadnext_/" title="Instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             <%- instagramWall(6,6, false, 'black', 'white', 'column') %>
-            &copy; <%= date(new Date(), 'YYYY') %> <%= config.author %> - <%= config.title %> - All Rights Reserved.
+            <span style="float: right">&copy; <%= date(new Date(), 'YYYY') %> <%= config.author %> - <%= config.title %> - All Rights Reserved. </span>
         </div>
 
     </div>
