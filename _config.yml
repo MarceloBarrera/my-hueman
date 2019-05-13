@@ -31,6 +31,8 @@ customize:
 # Widgets
 widgets:
     - catalog
+    - subscribe
+    - goodreads_box
     - recent_posts
     - category
     - archive

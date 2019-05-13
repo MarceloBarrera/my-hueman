@@ -17,10 +17,11 @@
             <% }) %>
         <% } %>
         <% if (is_post()) { %>
+            <%- partial('widget/subscribe') %>
+            <%- partial('widget/goodreads_box') %>
             <%- partial('widget/recent_posts', {post: page}) %>
         <% } %>
 
-        <%- partial('widget/goodreads_box') %>
     </div>
 
 </aside>
